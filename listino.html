@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Listino Miki Computer's Agency: assemblaggio PC su richiesta a 100 euro.">
+  <meta name="theme-color" content="#000000">
+  <title>Listino | Miki Computer's Agency</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    :root { --bg: #000; --bg-soft: #050505; --panel: rgba(10,10,10,.92); --panel-strong: #000; --primary: #087da6; --secondary: #eefbff; --accent: #56d7ff; --muted: #a4a4a4; --line: rgba(255,255,255,.16); --shadow: 0 28px 70px rgba(0,0,0,.5); }
+    body { background: #000; }
+    .glow-one { background: rgba(26,157,211,.42); }
+    .brand-mark { background: linear-gradient(135deg,#087da6,#56d7ff); }
+    .brand-logo { width: 48px; height: 48px; object-fit: contain; }
+    .button { background: linear-gradient(135deg,#087da6,#075276); border-color: rgba(86,215,255,.5); }
+    .button:hover { background: #56d7ff; color: #000; }
+    .price-page { padding: 110px 0 130px; }
+    .price-hero { max-width: 790px; margin-bottom: 58px; }
+    .price-hero h1 { margin: 28px 0 22px; }
+    .price-hero .lead { max-width: 650px; }
+    .price-card { display: grid; grid-template-columns: 1.2fr .8fr; gap: 45px; align-items: center; padding: 48px 52px; border: 1px solid rgba(86,215,255,.3); border-radius: 28px; background: linear-gradient(135deg,rgba(8,125,166,.2),rgba(255,255,255,.035)); box-shadow: var(--shadow); }
+    .price-card h2 { margin-bottom: 15px; }
+    .price-card p { max-width: 570px; margin-bottom: 0; }
+    .price-number { text-align: center; padding: 26px 20px; border-left: 1px solid var(--line); }
+    .price-number strong { display: block; color: var(--accent); font-size: clamp(4rem, 8vw, 7rem); line-height: .85; letter-spacing: -.08em; }
+    .price-number span { color: var(--muted); font-size: .75rem; letter-spacing: .12em; text-transform: uppercase; }
+    .price-details { display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px; margin-top: 22px; }
+    .price-detail { padding: 24px 22px; border: 1px solid var(--line); border-radius: 22px; background: linear-gradient(180deg,rgba(12,23,21,.76),rgba(9,18,17,.8)); }
+    .price-detail span { display: block; margin-bottom: 9px; color: var(--accent); font-weight: 800; letter-spacing: .12em; }
+    .price-detail h3 { margin-bottom: 8px; font-size: 1.15rem; }
+    .price-detail p { margin-bottom: 0; font-size: .9rem; }
+    .price-note { margin-top: 34px; padding: 20px 22px; border-left: 3px solid var(--accent); background: rgba(86,215,255,.06); color: var(--muted); font-size: .9rem; }
+    .price-actions { display: flex; gap: 16px; flex-wrap: wrap; margin-top: 36px; }
+    .back-link { color: var(--muted); font-size: .85rem; align-self: center; }
+    .back-link:hover { color: var(--accent); }
+    @media (max-width: 760px) { .price-page { padding: 78px 0 95px; } .price-card { grid-template-columns: 1fr; padding: 30px 24px; gap: 24px; } .price-number { border-left: 0; border-top: 1px solid var(--line); padding-top: 34px; } .price-details { grid-template-columns: 1fr; } .price-actions { flex-direction: column; align-items: stretch; } .price-actions .button { width: 100%; } .back-link { text-align: center; } }
+  </style>
+</head>
+<body>
+  <div class="page-glow glow-one"></div><div class="page-glow glow-two"></div>
+  <header class="site-header"><div class="container nav"><a class="brand" href="index.html" aria-label="Miki Computer's Agency home"><img class="brand-logo" src="mikicomputer-removebg-preview.png" alt="Miki Computer's Agency"><span>Miki Computer's <b>Agency</b></span></a><nav class="main-nav" aria-label="Navigazione principale"><a href="index.html#servizi">Servizi</a><a href="index.html#configurazioni">Configurazioni</a><a href="listino.html">Listino</a><a href="index.html#processo">Processo</a><a href="contatti.html">Contatti</a></nav><a href="contatti.html" class="button button-small">Parliamone</a><button class="menu-button" aria-label="Apri menu" aria-expanded="false"><span></span><span></span></button></div></header>
+  <main class="price-page"><div class="container"><div class="price-hero reveal"><p class="eyebrow">LISTINO / ASSEMBLAGGIO</p><h1>Un prezzo chiaro.<br>Una build fatta bene.</h1><p class="lead">Il servizio di assemblaggio costa <strong>100 €</strong>. I componenti vengono scelti e acquistati separatamente in base alla configurazione progettata insieme.</p></div><section class="price-card reveal"><div><p class="eyebrow">SERVIZIO PRINCIPALE</p><h2>Assemblaggio PC su richiesta</h2><p>Montiamo il tuo PC partendo dai componenti concordati, curiamo cable management e airflow, aggiorniamo il sistema e verifichiamo che tutto funzioni correttamente prima della consegna.</p><div class="price-actions"><a class="button" href="contatti.html">Richiedi il servizio</a><a class="back-link" href="index.html">← Torna alla home</a></div></div><div class="price-number"><strong>100€</strong><span>per ogni assemblaggio</span></div></section><div class="price-details"><article class="price-detail reveal"><span>01</span><h3>Montaggio pulito</h3><p>Installazione ordinata dei componenti e gestione dei cavi.</p></article><article class="price-detail reveal"><span>02</span><h3>Test completo</h3><p>Controlli di avvio, temperature, stabilità e funzionamento.</p></article><article class="price-detail reveal"><span>03</span><h3>Consegna pronta</h3><p>BIOS, sistema operativo e driver configurati dove richiesto.</p></article></div><p class="price-note"><strong>Nota:</strong> il prezzo di 100 € riguarda esclusivamente il servizio di assemblaggio. Non vendiamo PC pre-assemblati e il costo dei componenti viene definito separatamente nel preventivo.</p></div></main>
+  <footer class="site-footer"><div class="container copyright"><span>© <span id="year"></span> MIKI COMPUTER'S AGENCY</span></div></footer>
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Richiedi una configurazione PC assemblata su misura a Miki Computer's Agency.">
+  <meta name="theme-color" content="#000000">
+  <title>Contatti | Miki Computer's Agency</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    :root { --bg: #000; --bg-soft: #050505; --panel: rgba(10,10,10,.92); --panel-strong: #000; --primary: #087da6; --secondary: #eefbff; --accent: #56d7ff; --muted: #a4a4a4; --line: rgba(255,255,255,.16); --shadow: 0 28px 70px rgba(0,0,0,.5); }
+    body { background: #000; }
+    .glow-one { background: rgba(26,157,211,.42); }
+    .brand-mark { background: linear-gradient(135deg,#087da6,#56d7ff); }
+    .button { background: linear-gradient(135deg,#087da6,#075276); border-color: rgba(86,215,255,.5); }
+    .button:hover { background: #56d7ff; color: #000; }
+    .brand-logo { width: 48px; height: 48px; object-fit: contain; }
+    .contact-page { padding: 110px 0 130px; }
+    .contact-page-grid { display: grid; grid-template-columns: .9fr 1.1fr; gap: 70px; align-items: start; }
+    .contact-page h1 { max-width: 620px; margin: 28px 0 24px; }
+    .contact-page-intro > p:last-child { max-width: 410px; }
+    .contact-page-form { padding: 30px; border: 1px solid rgba(86,215,255,.28); border-radius: 28px; background: linear-gradient(145deg, rgba(8,125,166,.16), rgba(10,10,10,.92)); box-shadow: var(--shadow); }
+    .contact-page-form label { display: block; margin-bottom: 20px; color: var(--muted); font-size: .72rem; letter-spacing: .12em; text-transform: uppercase; }
+    .contact-page-form input, .contact-page-form textarea { display: block; width: 100%; margin-top: 9px; padding: 15px 16px; border: 1px solid var(--line); border-radius: 14px; outline: 0; background: rgba(0,0,0,.45); color: var(--text); font: 1rem Inter, sans-serif; resize: vertical; }
+    .contact-page-form input:focus, .contact-page-form textarea:focus { border-color: var(--accent); box-shadow: 0 0 0 3px rgba(86,215,255,.12); }
+    .contact-page-form input::placeholder, .contact-page-form textarea::placeholder { color: #727272; }
+    .contact-page-form .button { border: 0; cursor: pointer; }
+    .form-feedback { min-height: 22px; margin: 15px 0 0; color: var(--accent); font-size: .8rem; }
+    .back-link { display: inline-block; margin-top: 28px; color: var(--muted); font-size: .85rem; }
+    .back-link:hover { color: var(--accent); }
+    @media (max-width: 800px) { .contact-page { padding: 78px 0 95px; } .contact-page-grid { grid-template-columns: 1fr; gap: 48px; } }
+  </style>
+</head>
+<body>
+  <div class="page-glow glow-one"></div><div class="page-glow glow-two"></div>
+  <header class="site-header"><div class="container nav"><a class="brand" href="index.html" aria-label="Miki Computer's Agency home"><img class="brand-logo" src="mikicomputer-removebg-preview.png" alt="Miki Computer's Agency"><span>Miki Computer's <b>Agency</b></span></a><nav class="main-nav" aria-label="Navigazione principale"><a href="index.html#servizi">Servizi</a><a href="index.html#configurazioni">Configurazioni</a><a href="listino.html">Listino</a><a href="index.html#processo">Processo</a><a href="contatti.html">Contatti</a></nav><a href="index.html" class="button button-small">Torna al sito</a><button class="menu-button" aria-label="Apri menu" aria-expanded="false"><span></span><span></span></button></div></header>
+  <main class="contact-page"><div class="container contact-page-grid"><div class="contact-page-intro reveal"><p class="eyebrow">CONTATTI / CONFIGURAZIONE</p><h1>Costruiamo il PC che ti serve.</h1><p class="lead">Raccontaci come lavori, cosa vuoi giocare o quali programmi usi. Non abbiamo modelli preimpostati: ogni preventivo nasce dalle tue esigenze.</p><a class="back-link" href="index.html">← Torna alla home</a></div><form class="contact-page-form reveal" id="contact-page-form" action="https://formsubmit.co/mikicomputers26@gmail.com" method="POST"><input type="hidden" name="_subject" value="Nuova richiesta PC assemblato"><input type="hidden" name="_captcha" value="false"><input type="text" name="_honey" tabindex="-1" autocomplete="off" aria-hidden="true" style="display:none"><label>Nome e cognome<input name="name" required placeholder="Come ti chiami?"></label><label>Email<input name="email" type="email" required placeholder="La tua email"></label><label>Che PC vuoi assemblare?<textarea name="project" rows="5" required placeholder="Gaming, lavoro, budget, componenti che hai già in mente..."></textarea></label><button class="button" type="submit">Invia richiesta ↗</button></form></div></main>
+  <footer class="site-footer"><div class="container copyright"><span>© <span id="year"></span> MIKI COMPUTER'S AGENCY</span></div></footer>
+  <script src="script.js"></script>
+</body>
+</html>
